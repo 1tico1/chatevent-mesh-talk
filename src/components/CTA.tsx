@@ -35,7 +35,7 @@ const CTA = () => {
 
             <div className="pt-8 border-t border-border/50">
               <p className="text-sm text-muted-foreground">
-                Mais de <span className="font-semibold text-foreground">100+ eventos</span> já confiam no Chatevent
+                Sistema em produção • Pronto para operar
               </p>
             </div>
           </div>

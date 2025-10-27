@@ -1,25 +1,25 @@
-import { Wifi, Bluetooth, Database, Repeat } from "lucide-react";
+import { Wifi, Database, Repeat, CheckCircle } from "lucide-react";
 
 const steps = [
   {
     icon: Wifi,
-    title: "1. Prioridade: Internet",
-    description: "Sistema usa Supabase Realtime para comunicação em tempo real quando há conectividade.",
-  },
-  {
-    icon: Bluetooth,
-    title: "2. Fallback: Bluetooth",
-    description: "Sem internet? A malha local via Web Bluetooth assume automaticamente, sem intervenção.",
+    title: "1. Tempo Real via Internet",
+    description: "Sistema usa Supabase Realtime para comunicação instantânea quando há conectividade estável.",
   },
   {
     icon: Database,
-    title: "3. Cache Local",
-    description: "Tudo é guardado no IndexedDB. Mensagens não entregues ficam na fila de pendências.",
+    title: "2. Cache Local Automático",
+    description: "Todas as mensagens são guardadas no IndexedDB. Você pode consultar o histórico mesmo offline.",
   },
   {
     icon: Repeat,
-    title: "4. Sincronização",
-    description: "Quando a conectividade retorna, o sistema reenvia automaticamente tudo que estava pendente.",
+    title: "3. Fila de Pendências",
+    description: "Sem conexão? Mensagens ficam na fila local e são enviadas automaticamente quando a rede volta.",
+  },
+  {
+    icon: CheckCircle,
+    title: "4. Indicadores Claros",
+    description: "Veja o status de cada mensagem: pendente, entregue ou lida. Contadores de não lidas por canal.",
   },
 ];
 
@@ -31,10 +31,10 @@ const HowItWorks = () => {
       <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-4xl sm:text-5xl font-bold">
-            Como funciona o sistema híbrido
+            Como funciona a sincronização
           </h2>
           <p className="text-xl text-muted-foreground">
-            O usuário não precisa entender tecnologia — o Chatevent decide o melhor transporte a cada instante
+            Tempo real quando possível, offline-first sempre — o usuário conversa, o sistema cuida do resto
           </p>
         </div>
 
@@ -67,21 +67,16 @@ const HowItWorks = () => {
 
           {/* Visual flow indicator */}
           <div className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-primary/20">
-            <div className="flex items-center justify-center gap-4 text-sm font-medium">
-              <span className="text-foreground">Internet disponível</span>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm font-medium text-center">
+              <span className="text-foreground">Com internet</span>
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-muted-foreground">→</span>
-              <span className="text-foreground">Realtime</span>
-              <span className="text-muted-foreground">|</span>
+              <span className="text-muted-foreground hidden sm:inline">→</span>
+              <span className="text-foreground">Realtime instantâneo</span>
+              <span className="text-muted-foreground hidden sm:inline">|</span>
               <span className="text-foreground">Sem internet</span>
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-muted-foreground">→</span>
-              <span className="text-foreground">Bluetooth</span>
-              <span className="text-muted-foreground">|</span>
-              <span className="text-foreground">Offline</span>
-              <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-muted-foreground">→</span>
-              <span className="text-foreground">Cache + Fila</span>
+              <span className="text-muted-foreground hidden sm:inline">→</span>
+              <span className="text-foreground">Fila local + reenvio automático</span>
             </div>
           </div>
         </div>

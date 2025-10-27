@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Radio, MessageSquare, Wifi, WifiOff } from "lucide-react";
+import { ArrowRight, Radio, MessageSquare, Database } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -31,8 +31,8 @@ const Hero = () => {
 
           {/* Subheading */}
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A plataforma híbrida que mantém sua equipe conectada em eventos e operações — 
-            com ou sem internet, direto no navegador.
+            Plataforma de comunicação em tempo real que roda direto no navegador — 
+            chat organizado, rádio ao vivo e sincronização offline automática.
           </p>
 
           {/* Key features badges */}
@@ -43,12 +43,11 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card/50 backdrop-blur-sm border border-border">
               <Radio className="w-4 h-4 text-primary" />
-              <span className="text-sm">Rádio no navegador</span>
+              <span className="text-sm">Rádio ao vivo</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card/50 backdrop-blur-sm border border-border">
-              <Wifi className="w-4 h-4 text-primary" />
-              <WifiOff className="w-4 h-4 text-primary" />
-              <span className="text-sm">Funciona offline</span>
+              <Database className="w-4 h-4 text-primary" />
+              <span className="text-sm">Sincronização offline</span>
             </div>
           </div>
 

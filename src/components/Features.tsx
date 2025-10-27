@@ -1,11 +1,6 @@
-import { Radio, MessageSquare, Shield, Zap, Globe, Network } from "lucide-react";
+import { Radio, MessageSquare, Shield, Zap, Globe, Users } from "lucide-react";
 
 const features = [
-  {
-    icon: Network,
-    title: "Sistema Híbrido Inteligente",
-    description: "Prioriza internet, mas alterna automaticamente para Bluetooth quando necessário. Sem ação manual, sem interrupções.",
-  },
   {
     icon: MessageSquare,
     title: "Comunicação Organizada",
@@ -27,9 +22,14 @@ const features = [
     description: "Cada cliente/sala opera de forma independente. Zero vazamento entre eventos, máxima privacidade.",
   },
   {
+    icon: Users,
+    title: "Presença e Ações",
+    description: "Veja quem está online, responda com citação, encaminhe mensagens, favorite e denuncie conteúdo inadequado.",
+  },
+  {
     icon: Globe,
     title: "PWA Multilíngue",
-    description: "Funciona direto no navegador, pode ser instalado na tela inicial. Suporte para PT-BR, EN e ES.",
+    description: "Funciona direto no navegador, pode ser instalado na tela inicial. Suporte para PT-BR, EN e ES com tradução automática.",
   },
 ];
 
@@ -41,10 +41,10 @@ const Features = () => {
       <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-4xl sm:text-5xl font-bold">
-            Resiliência real, sem complexidade
+            Tudo que sua equipe precisa para se comunicar
           </h2>
           <p className="text-xl text-muted-foreground">
-            Tecnologia avançada que funciona de forma transparente para sua equipe
+            Funcionalidades essenciais que mantêm todos sincronizados, com ou sem internet
           </p>
         </div>
 

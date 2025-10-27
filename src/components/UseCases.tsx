@@ -16,7 +16,7 @@ const useCases = [
   {
     icon: Truck,
     title: "Operações de Campo",
-    description: "Times em movimento com 4G instável. Malha Bluetooth garante continuidade em galpões e ruas.",
+    description: "Times em movimento com 4G instável. Cache local e reentrega automática garantem continuidade.",
     tags: ["Logística", "Fieldops", "Mobile"],
   },
   {
@@ -28,7 +28,7 @@ const useCases = [
   {
     icon: Briefcase,
     title: "Plantões Corporativos",
-    description: "Continuidade mandatória. Sistema híbrido garante que a mensagem chegue, sempre.",
+    description: "Continuidade mandatória. Sincronização offline garante que a mensagem chegue, sempre.",
     tags: ["Corporativo", "24/7", "Missão crítica"],
   },
 ];
