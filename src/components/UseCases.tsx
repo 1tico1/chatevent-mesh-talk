@@ -4,31 +4,31 @@ const useCases = [
   {
     icon: Music,
     title: "Festivais e Shows",
-    description: "Coordenação entre produção, palco, segurança e credenciamento em tempo real, mesmo com milhares de pessoas.",
+    description: "Produção, palco, segurança e credenciamento em tempo real.",
     tags: ["Produção", "Segurança", "Staff"],
   },
   {
     icon: Building2,
     title: "Feiras e Congressos",
-    description: "Equipes por pavilhão, trilha ou área. Comunicação fluida sem sobrecarregar rádios tradicionais.",
+    description: "Equipes por pavilhão e trilha, comunicação fluida.",
     tags: ["Staff", "Coordenação", "Multiárea"],
   },
   {
     icon: Truck,
     title: "Operações de Campo",
-    description: "Times em movimento com 4G instável. Cache local e reentrega automática garantem continuidade.",
+    description: "Continuidade com 4G instável graças ao offline-first.",
     tags: ["Logística", "Fieldops", "Mobile"],
   },
   {
     icon: GraduationCap,
     title: "Escolas e Universidades",
-    description: "Canais por turma, curso ou evento. Moderação e organização para comunicação institucional.",
+    description: "Canais por turma/curso e comunicação institucional.",
     tags: ["Educação", "Eventos", "Admin"],
   },
   {
     icon: Briefcase,
     title: "Plantões Corporativos",
-    description: "Continuidade mandatória. Sincronização offline garante que a mensagem chegue, sempre.",
+    description: "Continuidade e reenvio automático garantem entrega.",
     tags: ["Corporativo", "24/7", "Missão crítica"],
   },
 ];

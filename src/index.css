@@ -75,6 +75,12 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes kenburns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.08) translate(1%, -1%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+
 @layer utilities {
   .gradient-primary {
     background: var(--gradient-primary);
@@ -99,4 +105,31 @@ All colors MUST be HSL.
   .transition-smooth {
     transition: var(--transition-smooth);
   }
+  
+  .animate-kenburns {
+    animation: kenburns 22s ease-in-out infinite alternate;
+    will-change: transform;
+    transform-origin: center;
+  }
+
+  /* Versão HQ: zoom menor para preservar nitidez */
+  .animate-kenburns-hq {
+    animation: kenburns-hq 30s ease-in-out infinite alternate;
+    will-change: transform;
+    transform-origin: center;
+  }
+
+  /* Leve realce de nitidez e cor no banner */
+  .banner-image {
+    object-position: center;
+    filter: contrast(1.06) saturate(1.08);
+    transform: translateZ(0);
+  }
+}
+
+/* Animação HQ com menos escala (evita perda de qualidade visual) */
+@keyframes kenburns-hq {
+  0% { transform: scale(1.0) translate(0, 0); }
+  50% { transform: scale(1.03) translate(0.5%, -0.5%); }
+  100% { transform: scale(1.0) translate(0, 0); }
 }

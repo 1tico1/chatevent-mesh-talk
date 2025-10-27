@@ -3,33 +3,33 @@ import { Radio, MessageSquare, Shield, Zap, Globe, Users } from "lucide-react";
 const features = [
   {
     icon: MessageSquare,
-    title: "Comunicação Organizada",
-    description: "Chat público, canais temáticos (#staff, #palco), DMs privadas — tudo no mesmo lugar, sem ruído.",
+    title: "Comunicação organizada",
+    description: "Chat público, canais (#staff, #palco) e DMs em um só lugar — menos ruído, mais foco.",
   },
   {
     icon: Radio,
-    title: "Rádio no Navegador",
-    description: "Transmissão de voz ao vivo com LiveKit. Ideal para briefings, anúncios e coordenação em tempo real.",
+    title: "Rádio no navegador (opcional)",
+    description: "Transmissão de voz via LiveKit para briefings e anúncios — sem rádios tradicionais. ⚑",
   },
   {
     icon: Zap,
-    title: "Offline-First",
-    description: "Cache local com IndexedDB e reentrega automática. Mensagens enviadas mesmo sem conexão são sincronizadas depois.",
+    title: "Offline-first",
+    description: "Cache local (IndexedDB) e reenvio automático quando a internet volta — continuidade garantida.",
   },
   {
     icon: Shield,
-    title: "Isolamento por Escopo",
-    description: "Cada cliente/sala opera de forma independente. Zero vazamento entre eventos, máxima privacidade.",
+    title: "Isolamento por escopo",
+    description: "Cada cliente/sala funciona de forma independente — zero vazamento entre eventos.",
   },
   {
     icon: Users,
-    title: "Presença e Ações",
-    description: "Veja quem está online, responda com citação, encaminhe mensagens, favorite e denuncie conteúdo inadequado.",
+    title: "Presença e ações",
+    description: "Quem está online, menções com @nome, responder com citação, encaminhar preservando autor, copiar, favoritar, denunciar e excluir localmente.",
   },
   {
     icon: Globe,
-    title: "PWA Multilíngue",
-    description: "Funciona direto no navegador, pode ser instalado na tela inicial. Suporte para PT-BR, EN e ES com tradução automática.",
+    title: "PWA multilíngue",
+    description: "Instalável no desktop e no mobile, interface PT-BR/EN/ES e tradução automática — sem instalar nada.",
   },
 ];
 
@@ -62,6 +62,8 @@ const Features = () => {
             </div>
           ))}
         </div>
+
+        <p className="mt-8 text-xs text-muted-foreground text-center">⚑ Rádio ao vivo sujeito a habilitação e configuração de LiveKit.</p>
       </div>
     </section>
   );

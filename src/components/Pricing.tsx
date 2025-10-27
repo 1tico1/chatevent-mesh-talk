@@ -1,4 +1,4 @@
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const plan = {
@@ -6,20 +6,20 @@ const plan = {
   price: "Sob consulta",
   description: "Plataforma completa de comunicação em tempo real para eventos e operações",
   features: [
-    "Clientes e salas ilimitados",
+    "Clientes e salas ilimitados*",
     "Chat público, canais (#staff, #palco) e DMs",
-    "Rádio ao vivo com LiveKit",
+    "Rádio ao vivo (opcional)*",
     "Sincronização offline automática (IndexedDB)",
     "Presença online e apelidos",
-    "Ações nas mensagens (responder, encaminhar, copiar, favoritar, denunciar)",
+    "Menções com @ para destacar pessoas",
+    "Ações na mensagem (responder, encaminhar, copiar, favoritar, denunciar)",
     "Indicadores de status (pendente, entregue, lida)",
-    "Contadores de não lidas por canal",
+    "Contadores de não-lidas por canal",
     "Moderação: remover mensagens para todos",
     "Painel admin (criar clientes/salas, gerenciar canais e usuários)",
-    "PWA multiplataforma (instalável)",
-    "Multilíngue: PT-BR, EN, ES",
-    "Tradução automática de mensagens",
-    "Notificações push",
+    "PWA instalável (desktop e mobile)",
+    "Multilíngue: PT-BR, EN, ES (com tradução automática)",
+    "Notificações push (quando habilitadas)",
     "Suporte técnico e atualizações incluídas",
   ],
   cta: "Solicitar proposta",
@@ -53,7 +53,7 @@ const Pricing = () => {
               </div>
 
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-bold gradient-primary bg-clip-text text-transparent">
+                <span className="inline-block px-3 py-1 rounded-md gradient-primary text-foreground text-4xl font-bold">
                   {plan.price}
                 </span>
               </div>
@@ -67,21 +67,28 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <Button
-                variant="hero"
-                size="lg"
-                className="w-full group"
-              >
-                {plan.cta}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <div className="text-xs text-muted-foreground space-y-1 pt-2">
+                <p>• Rádio ao vivo depende de configuração do LiveKit.</p>
+                <p>• Capacidades sujeitas a limites do provedor (ex.: plano do Supabase).</p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button variant="hero" size="lg" className="flex-1 group">
+                  {plan.cta}
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+                <Button variant="ghost-outline" size="lg" className="flex-1">
+                  <Calendar className="w-5 h-5" />
+                  Agendar demonstração
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="mt-16 text-center max-w-3xl mx-auto">
           <p className="text-muted-foreground">
-            Implementação inclui suporte técnico, atualizações contínuas e acesso à documentação completa.
+            Implementação inclui onboarding, suporte técnico, atualizações contínuas e acesso à documentação completa.
             <br />
             Entre em contato para conhecer opções de POC e onboarding assistido.
           </p>

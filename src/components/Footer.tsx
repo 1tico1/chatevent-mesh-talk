@@ -17,7 +17,7 @@ const Footer = () => {
                 <span className="text-xl font-bold">Chatevent</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Comunicação híbrida para eventos e operações que nunca para.
+                Comunicação que funciona — em tempo real e offline-first, direto no navegador.
               </p>
             </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Empresa</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition-colors">Sobre</a></li>
+                <li><a href="#sobre" className="hover:text-foreground transition-colors">Sobre</a></li>
                 <li><a href="#" className="hover:text-foreground transition-colors">Blog</a></li>
                 <li><a href="#" className="hover:text-foreground transition-colors">Carreiras</a></li>
                 <li><a href="#" className="hover:text-foreground transition-colors">Contato</a></li>
@@ -47,10 +47,9 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Legal</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition-colors">Privacidade</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Termos de uso</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">LGPD</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Segurança</a></li>
+                <li><a href="#em-breve" className="hover:text-foreground transition-colors">Privacidade</a></li>
+                <li><a href="#em-breve" className="hover:text-foreground transition-colors">Termos de uso</a></li>
+                <li><a href="#em-breve" className="hover:text-foreground transition-colors">LGPD</a></li>
               </ul>
             </div>
           </div>
@@ -59,11 +58,6 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               © {currentYear} Chatevent. Todos os direitos reservados.
             </p>
-            <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">LinkedIn</a>
-              <a href="#" className="hover:text-foreground transition-colors">Twitter</a>
-              <a href="#" className="hover:text-foreground transition-colors">GitHub</a>
-            </div>
           </div>
         </div>
       </div>
