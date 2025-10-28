@@ -10,6 +10,7 @@ const plan = {
   features: [
     "Clientes e salas ilimitados*",
     "Chat público, canais (#staff, #palco) e DMs",
+    "Transmissão ao vivo com Tradução Simutanea",
     "Rádio ao vivo (opcional)*",
     "Sincronização offline automática (IndexedDB)",
     "Presença online e apelidos",

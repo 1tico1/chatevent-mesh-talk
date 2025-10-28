@@ -17,11 +17,15 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-5xl mx-auto text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-foreground">Já em produção • Pronto para escalar</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="ChatEvents"
+            className="mx-auto w-56 sm:w-64 h-auto opacity-90"
+            loading="eager"
+            decoding="async"
+            draggable={false}
+          />
+      
 
           {/* Main heading */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
