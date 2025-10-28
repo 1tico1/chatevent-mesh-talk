@@ -17,7 +17,7 @@ const CTA = () => {
               <h2 className="text-4xl sm:text-5xl font-bold">
                 Pronto para manter sua equipe
                 <br />
-                <span className="inline-block px-2 py-1 rounded-md gradient-primary text-foreground">
+                <span className="inline-block px-2 py-0 rounded-md gradient-primary text-foreground">
                   sempre conectada?
                 </span>
               </h2>
@@ -28,7 +28,7 @@ const CTA = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="hero" size="lg" className="group" asChild>
-                <a href="https://chatevent.com.br/" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.chatevent.com.br/c/site" target="_blank" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5" />
                   Testar demo
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

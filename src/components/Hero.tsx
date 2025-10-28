@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Main heading */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
             Comunicação que{" "}
-            <span className="inline-block px-3 py-1 rounded-md gradient-primary text-foreground">
+            <span className="inline-block px-3 py-0 rounded-md gradient-primary text-foreground">
               funciona
             </span>
           </h1>
@@ -63,7 +63,7 @@ const Hero = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <Button variant="hero" size="lg" className="group" asChild>
-              <a href="https://chatevent.com.br/" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.chatevent.com.br/c/site" target="_blank" rel="noopener noreferrer">
                 Testar demo
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
