@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio, MessageSquare, Database } from "lucide-react";
 
+
 const Hero = () => {
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background */}
@@ -56,14 +58,19 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-            <Button variant="hero" size="lg" className="group">
-              Agendar demonstração
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button variant="hero" size="lg" className="group" asChild>
+              <a href="https://chatevent.com.br/" target="_blank" rel="noopener noreferrer">
+                Testar demo
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             <Button variant="ghost-outline" size="lg" asChild>
               <a href="#como-funciona">Ver como funciona</a>
             </Button>
           </div>
+
+          {/* Modal para botões não funcionais */}
+          
 
           {/* Micro-selos */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-12 text-sm">

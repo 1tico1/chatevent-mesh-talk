@@ -1,5 +1,7 @@
-import { Check, ArrowRight, Calendar } from "lucide-react";
+// imports do arquivo Pricing
+import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 
 const plan = {
   name: "Chatevent",
@@ -26,9 +28,10 @@ const plan = {
 };
 
 const Pricing = () => {
+  
   return (
     <section className="py-24 bg-background" id="pricing">
-      <div className="container px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-4xl sm:text-5xl font-bold">
             Tudo incluído, sem surpresas
@@ -73,18 +76,24 @@ const Pricing = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button variant="hero" size="lg" className="flex-1 group">
-                  {plan.cta}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <Button variant="hero" size="lg" className="group w-full" asChild>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=ticodev@inacsistemas.com&su=Proposta%20Chatevent&body=Ol%C3%A1%2C%20gostaria%20de%20uma%20proposta%20para%20o%20Chatevent."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {plan.cta}
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </Button>
-                <Button variant="ghost-outline" size="lg" className="flex-1">
-                  <Calendar className="w-5 h-5" />
-                  Agendar demonstração
-                </Button>
+                {/* Removido o botão 'Agendar demonstração' ao lado */}
               </div>
             </div>
           </div>
         </div>
+
+        {/* Modal para botões não funcionais */}
+        
 
         <div className="mt-16 text-center max-w-3xl mx-auto">
           <p className="text-muted-foreground">

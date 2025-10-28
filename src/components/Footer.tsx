@@ -25,10 +25,10 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Produto</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition-colors">Funcionalidades</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Casos de uso</a></li>
+                <li><a href="#funcionalidades" className="hover:text-foreground transition-colors">Funcionalidades</a></li>
+                <li><a href="#casos-de-uso" className="hover:text-foreground transition-colors">Casos de uso</a></li>
                 <li><a href="#pricing" className="hover:text-foreground transition-colors">Preços</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Documentação</a></li>
+                <li><a href="#em-breve" className="hover:text-foreground transition-colors">Documentação</a></li>
               </ul>
             </div>
 
@@ -37,9 +37,9 @@ const Footer = () => {
               <h3 className="font-semibold mb-4">Empresa</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#sobre" className="hover:text-foreground transition-colors">Sobre</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Carreiras</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Contato</a></li>
+                <li><a href="#em-breve" className="hover:text-foreground transition-colors">Blog</a></li>
+                <li><a href="#em-breve" className="hover:text-foreground transition-colors">Carreiras</a></li>
+                <li><a href="#contato" className="hover:text-foreground transition-colors">Contato</a></li>
               </ul>
             </div>
 
