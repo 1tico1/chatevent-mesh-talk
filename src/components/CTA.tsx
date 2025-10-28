@@ -35,7 +35,7 @@ const CTA = () => {
                 </a>
               </Button>
               <Button variant="ghost-outline" size="lg" asChild>
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511963005733" target="_blank" rel="noopener noreferrer">
                   Falar com especialista
                 </a>
               </Button>

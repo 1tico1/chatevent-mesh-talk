@@ -79,7 +79,7 @@ const Pricing = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button variant="hero" size="lg" className="group w-full" asChild>
                   <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=ticodev@inacsistemas.com&su=Proposta%20Chatevent&body=Ol%C3%A1%2C%20gostaria%20de%20uma%20proposta%20para%20o%20Chatevent."
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=miguel@grupoinac.com.br&su=Proposta%20Chatevent&body=Ol%C3%A1%2C%20gostaria%20de%20uma%20proposta%20para%20o%20Chatevent."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
