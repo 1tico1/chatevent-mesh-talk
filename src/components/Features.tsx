@@ -11,13 +11,13 @@ const features = [
     icon: Radio,
     title: "Rádio no navegador (opcional)",
     description:
-      "Transmissão de voz via LiveKit para briefings e anúncios, sem rádios tradicionais.",
+      "Transmissão de voz para briefings e anúncios, sem rádios tradicionais.",
   },
   {
     icon: Zap,
-    title: "Offline-first",
+    title: "Confiável em redes instáveis",
     description:
-      "Cache local (IndexedDB) e reenvio automático quando a internet volta, garantindo continuidade.",
+      "Pensado para eventos: mantém a sessão e reconecta rápido em redes cheias. O envio depende da conexão.",
   },
   {
     icon: Shield,
