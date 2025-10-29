@@ -22,7 +22,7 @@ const CTA = () => {
                 </span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Agende uma demonstração personalizada e veja o Chatevent em ação no seu contexto
+                Veja o ChatEvent em ação no seu contexto.
               </p>
             </div>
 
